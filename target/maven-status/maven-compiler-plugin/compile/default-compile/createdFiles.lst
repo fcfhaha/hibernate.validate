@@ -1,0 +1,10 @@
+com\hibernate\validator\ValidationUtils.class
+com\hibernate\validator\vo\SimpleEntity.class
+com\hibernate\validator\vo\User.class
+com\hibernate\validator\vo\PassWordTestEntity.class
+com\hibernate\validator\service\ValidatorService.class
+com\hibernate\validator\PasswordValidator.class
+com\hibernate\validator\controller\ValidatorController.class
+com\hibernate\validator\vo\Car.class
+com\hibernate\validator\ValidationResult.class
+com\hibernate\validator\annotations\Password.class

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="hibernate.validate Maven Webapp"
+  id="myeclipse.1504764047291"
+  context-root="/hibernate.validate"
+  j2ee-spec="1.7"
+  archive="hibernate.validate Maven Webapp.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

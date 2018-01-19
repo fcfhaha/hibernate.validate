@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [29/Dec/2017:09:29:17 +0800] "GET /hibernate.validate/validator HTTP/1.1" 200 437 http-bio-80-exec-1 545
+0:0:0:0:0:0:0:1 - - [29/Dec/2017:09:29:19 +0800] "POST /hibernate.validate/validator/login HTTP/1.1" 200 476 http-bio-80-exec-2 136
