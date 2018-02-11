@@ -3,43 +3,43 @@ package com.hibernate.validator.vo;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
+import javax.validation.groups.Default;
 import org.hibernate.validator.constraints.Email;
+import com.hibernate.validator.group.CarGroup;
 
 public class Car {
-	@NotNull
-    private String manufacturer;
+
+	@NotNull(message = "生产商不能为空", groups = { CarGroup.class, Default.class })
+	private String manufacturer;
 	@Email
 	private String email;
-    @NotNull
-    @Size(min = 2, max = 14)
-    private String licensePlate;
+	@NotNull
+	@Size(min = 2, max = 14)
+	private String licensePlate;
 
-    @Min(2)
-    private int seatCount;
-    
-    public Car(String manufacturer, String licencePlate, int seatCount) {
-        this.manufacturer = manufacturer;
-        this.licensePlate = licencePlate;
-        this.seatCount = seatCount;
-    }
+	@Min(2)
+	private int seatCount;
 
-    public Car(String manufacturer, String licencePlate, int seatCount,String email) {
-        this.manufacturer = manufacturer;
-        this.licensePlate = licencePlate;
-        this.seatCount = seatCount;
-        this.email = email;
-    }
-    
+	public Car(String manufacturer, String licencePlate, int seatCount) {
+		this.manufacturer = manufacturer;
+		this.licensePlate = licencePlate;
+		this.seatCount = seatCount;
+	}
+
+	public Car(String manufacturer, String licencePlate, int seatCount, String email) {
+		this.manufacturer = manufacturer;
+		this.licensePlate = licencePlate;
+		this.seatCount = seatCount;
+		this.email = email;
+	}
+
 	public String getEmail() {
 		return email;
 	}
 
-
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
 
 	public String getManufacturer() {
 		return manufacturer;
@@ -64,6 +64,5 @@ public class Car {
 	public void setSeatCount(int seatCount) {
 		this.seatCount = seatCount;
 	}
-    
 
 }
